@@ -1,0 +1,76 @@
+{
+  "properties": {
+    "authors": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "createdAt": {
+      "type": "long"
+    },
+    "hidden": {
+      "type": "boolean"
+    },
+    "hot": {
+      "type": "long"
+    },
+    "name": {
+      "properties": {
+        "en": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ja": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "zh-Hans": {
+          "type": "text",
+          "analyzer": "ik_smart_pinyin",
+          "search_analyzer": "ik_smart_pinyin",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "zh-Hant": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "updatedAt": {
+      "type": "long"
+    }
+  }
+}
