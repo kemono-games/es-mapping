@@ -18,6 +18,9 @@
     "hot": {
       "type": "long"
     },
+    "hotEn": {
+      "type": "long"
+    },
     "name": {
       "properties": {
         "en": {
